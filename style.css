@@ -1,0 +1,137 @@
+
+
+/* $azul: #004A8D;
+$laranja: #F7941D;
+$laranja-claro:#FDC180; */
+
+/* Tipologia */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+
+/* REPETIÇÃO */
+  html {
+    font-family: 'Lato', sans-serif !important; 
+    font-weight: 400;
+  }
+
+  p, span, h1, h2, h3, h4, h5, h6, li, a {
+    font-family: 'Lato', sans-serif !important; 
+  }
+
+  li {
+    list-style: none;
+  }
+
+/* HEADER */
+  header {
+    background-image: url('assets/images/iot.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    color:#fff;
+    border-bottom: solid 2px #F7941D;
+  }
+
+  header #institucional {
+    background-color: #f8f8f8;
+    border-bottom: solid 1px #F7941D;
+  }
+
+  header nav li {
+    display: inline;
+  }
+
+  header .navbar-collapse {
+    padding-top: 30px;;
+  }
+
+  header h1 {
+    font-weight: 700;
+  }
+
+  header article {
+    padding: 23.8vh 0;
+  }
+
+  header .navbar a {
+    color:#fff;
+  }
+
+  header .navbar a:hover {
+    color:#F7941D;
+  }
+
+/* Main */
+  main {
+    color:#777
+  }
+
+  main .breadcrumb {
+    background: none;
+    border-bottom: solid 1px #F7941D;
+  }
+
+  main .breadcrumb a {
+    color:#004A8D;
+  }
+
+  main .breadcrumb a:hover {
+    color:#F7941D;
+  }
+
+
+  .breadcrumb-item.active {
+    font-weight: 700;
+  }
+
+/* Navegação secundária */
+  #secundaria {
+    border-top:solid 1px #004A8D;
+    font-size: 14px;
+  }
+  #secundaria h5 {
+    color: #F7941D;
+    margin-top: 20px;
+  }
+  
+  #secundaria a {
+    color:#004A8D;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+  }
+
+  #secundaria a:hover {
+    text-decoration: underline;
+  }
+
+/* Informações Comerciais */
+  #infos {
+    background-color: #F7941D;
+    color:#fff;
+  }
+
+/* Footer */
+  
+  footer {
+    background: #004A8D;
+    padding: 20px 0;
+    color:#fff;
+    border-top: solid 2px #F7941D;
+  }
+
+
+  footer a {
+    color:#fff;
+    font-size: 1rem;
+    margin:20px 10px;
+  }
+
+  footer a:hover {
+    color:#F7941D
+  }
+
+  footer a .fab {
+    font-size: 1.3rem;
+  }
+
