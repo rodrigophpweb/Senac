@@ -37,9 +37,14 @@ $laranja-claro:#FDC180; */
     border-bottom: solid 1px #F7941D;
   }
 
+  header #institucional a {
+    color:#004a8d;
+  }
+
   header nav li {
     display: inline;
   }
+
 
   header .navbar-collapse {
     padding-top: 30px;;
