@@ -119,7 +119,7 @@ $laranja-claro:#FDC180; */
     color:#777
   }
 
-  main h3, main h4, main h5 {
+  main h3, main h5 {
     color:#F7941D;
     font-weight:700;
   } 
@@ -132,6 +132,19 @@ $laranja-claro:#FDC180; */
   main .breadcrumb a {
     color:#004A8D;
   }
+
+  main h4 {
+    color: #004A8D;
+    font-weight:700
+  }
+
+  main h4 .badge-primary {
+    background: #F7941D;
+    position: relative;
+    bottom: 3px;
+  }
+
+  
 
   .breadcrumb-item.active {
     font-weight: 700;
@@ -177,14 +190,72 @@ $laranja-claro:#FDC180; */
     left: 150px;
   }
 
+  main article .accordion {
+    border:none;
+  }
+
   main article .accordion a:hover {
     text-decoration:none;
+  }
+
+  main article .accordion h6 {
+    margin-top:40px;
+    color: #004A8D;
+    font-weight:700
+  }
+
+  main article .accordion h6:first-child{
+    margin-top:0
+  }
+
+  main article .accordion .badge-primary {
+    background-color:#F7941D
+  }
+
+  main article .accordion .card {
+    border:none;
+  }
+
+  main article .accordion .card-header {
+    background:none;
+  }
+
+/*Interesses*/
+
+  #interesses {
+    background-image:url('assets/images/fachada.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: #004a8d;
+    border-top:solid 2px #F7941D;
+    margin-top:50px;
+    padding: 50px 0;
+  }
+
+  #interesses h4 {
+    color: #fff;
+    font-weight: 700;
+  }
+
+  #interesses .btn-outline-primary {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+  }
+
+  #interesses .btn-outline-primary:hover {
+    border: #F7941D;
+    background-color: #F7941D;
+    color:#fff;
   }
 
 
 /* Navegação secundária */
   #secundaria {
-    border-top:solid 1px #004A8D;
+    border-top: solid 2px #F7941D;
     font-size: 14px;
   }
   #secundaria h5 {
