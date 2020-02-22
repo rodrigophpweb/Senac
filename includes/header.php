@@ -3,7 +3,7 @@
         <nav id="institucional">
             <div class="container">
                 <div class="row">
-                    <ul class="col-lg-6 mnu-top">
+                    <ul class="col-lg-6 mnu-top col-md-12 text-md-center">
                         <!-- Navegação de Itens Institucionais -->
                         <li><a href="" title="Hotéis">Hotéis</a></li>
                         <li><a href="" title="Editora">Editora</a></li>
@@ -11,14 +11,14 @@
                         <li><a href="" title="Atendimento Corporativa">Atendimento Corporativa</a></li>
                     </ul>
                     
-                    <div class="col-lg-3 text-center">                    
+                    <div class="col-lg-3 text-center col-md-12">                    
                         <!-- Formulário para pesquisa -->
                         <form action="/jsp/default.jsp" method="get">
                             <input name="keywords" type="search" placeholder="Busca">
                             <button><i class="fas fa-search"></i></button>
                         </form>
                     </div> 
-                    <div class="col-lg-3 text-right">
+                    <div class="col-lg-3 text-right col-md-12 text-md-center">
                         <!-- Acesso aos Alunos -->
                         <div id="acesso">
                             <span>Acesse seu <a href="https://www.sp.senac.br/login/Login" title="login" target="_blank">login</a> ou <a href="https://www.sp.senac.br/usuario-unico/InsertUser" title="cadastre-se">cadastre-se</a></span>
@@ -36,7 +36,7 @@
                             <img src="assets/images/logotipo-senac-negativo.svg"  class="d-inline-block align-top" alt="Logotipo Negativo Senac" width="100">
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
+                          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                           <ul class="navbar-nav ml-auto">
@@ -53,9 +53,9 @@
                                   Cursos
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <a class="dropdown-item" href="#">Analise de Dados</a>
+                                    <a class="dropdown-item" href="#">Machine Learn</a>
+                                    <a class="dropdown-item" href="#">Data Science</a>
                                 </div>
                             </li>
 
@@ -84,7 +84,7 @@
                       </nav>
                 </div>
                 <div class="col-lg-12">                    
-                    <article class="bonceInLeft">
+                    <article class="wow animated fadeIn delay-1s">
                         <h1>Centro Universitário Senac</h1>
                         <h2>Internet das Coisas<br>inovação tecnólogica e négocios</h2>
                     </article>

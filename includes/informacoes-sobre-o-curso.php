@@ -1,4 +1,4 @@
-<div class="col-lg-12">
+<div class="col-lg-12 wow animated shake">
     <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
 
         <div class="card">

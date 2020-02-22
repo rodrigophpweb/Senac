@@ -1,8 +1,10 @@
+/* 
 
+    Data:   22/02/2020
+    Código: SP13712  – Programador Web
+    Nome:   Rodrigo Vieira Eufrasio da Silva
 
-/* $azul: #004A8D;
-$laranja: #F7941D;
-$laranja-claro:#FDC180; */
+*/
 
 /* Tipologia */
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
@@ -14,8 +16,8 @@ $laranja-claro:#FDC180; */
     font-weight: 400;
   }
 
-  body {
-  overflow-x: hidden;
+  html {
+    overflow-x:hidden;
   }
 
   p, span, h1, h2, h3, h4, h5, h6, li, a {
@@ -34,6 +36,8 @@ $laranja-claro:#FDC180; */
     height: 100vh;
     color:#fff;
     border-bottom: solid 2px #F7941D;
+    background-blend-mode: multiply;
+    background-color: #004a8d;
   }
 
   header #institucional {
@@ -93,9 +97,12 @@ $laranja-claro:#FDC180; */
     color:#004a8d;
   }
 
-
   header .navbar-collapse {
     padding-top: 30px;;
+  }
+
+  .dropdown-menu {
+    background-color:#F7941D;
   }
 
   header h1 {
@@ -112,6 +119,9 @@ $laranja-claro:#FDC180; */
 
   header .navbar a:hover {
     color:#F7941D;
+  }
+  .dropdown-toggle::after {
+    
   }
 
 /* Main */
@@ -143,8 +153,6 @@ $laranja-claro:#FDC180; */
     position: relative;
     bottom: 3px;
   }
-
-  
 
   .breadcrumb-item.active {
     font-weight: 700;
@@ -235,7 +243,7 @@ $laranja-claro:#FDC180; */
     padding: 50px 0;
   }
 
-  #interesses h4 {
+  #interesses h2 {
     color: #fff;
     font-weight: 700;
   }
@@ -244,6 +252,7 @@ $laranja-claro:#FDC180; */
     color: #fff;
     background-color: transparent;
     border-color: #fff;
+    margin-top: 20px;
   }
 
   #interesses .btn-outline-primary:hover {
@@ -304,3 +313,125 @@ $laranja-claro:#FDC180; */
     font-size: 1.3rem;
   }
 
+
+  /* Media Query */
+
+
+@media (max-width: 1200px) {
+  
+  header {
+    height: auto;
+    background-size: cover;
+  };
+  
+  header #institucional a {
+  }
+
+  .masked img {
+    width: 100%;
+  }
+
+  main article .masked:nth-child(2){
+    left: 5vw;
+  }
+
+  .o-curso{
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .fotos {
+    display: none;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  header article {
+    padding: 70px 0 !important;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    height:auto;
+    background-size: cover;
+    background-position-x: 50%;
+    background-blend-mode: multiply;
+    background-color: #004a8d;
+  }
+  
+  #institucional {
+    display: none;
+  }
+
+  .navbar-toggler {
+    background: #F7941D;
+  }
+  .navbar-nav {
+    text-align:center;
+  }
+
+  .navbar-toggler-icon {
+    color:#fff;
+    padding-top: 5px;
+  }
+
+  main article .masked,
+  #secundaria {
+    display: none;
+  }
+  .o-curso {
+    width: 100%;;
+  }
+
+  header article {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 576px){
+  
+  main {
+    width:98%;
+    padding:0 1%;
+
+  }
+
+  footer a[title="Senac São Paulo"]{
+    text-align: center;
+    display: block;
+  }
+
+  footer small {
+    margin-bottom: 20px;
+  }
+
+  footer .col-12 {
+    text-align: center !important;
+  }
+
+}
+
+@media (max-width: 380px){ 
+  header h1 {
+    font-size: 32px;
+  }
+
+  header h2 {
+    font-size: 16px;
+  }
+}
