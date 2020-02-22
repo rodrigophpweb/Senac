@@ -14,6 +14,10 @@ $laranja-claro:#FDC180; */
     font-weight: 400;
   }
 
+  body {
+  overflow-x: hidden;
+  }
+
   p, span, h1, h2, h3, h4, h5, h6, li, a {
     font-family: 'Lato', sans-serif !important; 
   }
@@ -33,16 +37,60 @@ $laranja-claro:#FDC180; */
   }
 
   header #institucional {
-    background-color: #f8f8f8;
+    background-color: #fff;
     border-bottom: solid 1px #F7941D;
+    padding: 5px 0;
   }
+
+  header #institucional .mnu-top {
+    display: inline;
+    margin-bottom: 0;
+  }
+
+  header #institucional .mnu-top li{
+    margin: 0 10px;
+    display: inline;
+  }
+
+  header #institucional .mnu-top li a:hover {
+    color: #F7941D
+  }
+
+  header #institucional form {
+    display: flex;
+  }
+
+  header #institucional input[type=search] {
+    padding-top: 0;
+    border: solid 1px #F7941D;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  header #institucional input[type=search]:focus {
+    background:#FDC180;
+  }
+
+  header #institucional button {
+    background: #F7941D;
+    border:none;
+    color:#fff;
+    cursor:pointer;
+    border:solid 1px #F7941D
+  }
+
+  header #institucional button:hover {
+    background:#004a8d;
+    border:solid 1px #004a8d;
+  }
+
+  header #institucional span {
+    color:#F7941D;
+  }
+
 
   header #institucional a {
     color:#004a8d;
-  }
-
-  header nav li {
-    display: inline;
   }
 
 
@@ -71,6 +119,11 @@ $laranja-claro:#FDC180; */
     color:#777
   }
 
+  main h3, main h4, main h5 {
+    color:#F7941D;
+    font-weight:700;
+  } 
+
   main .breadcrumb {
     background: none;
     border-bottom: solid 1px #F7941D;
@@ -80,14 +133,54 @@ $laranja-claro:#FDC180; */
     color:#004A8D;
   }
 
+  .breadcrumb-item.active {
+    font-weight: 700;
+  }
+
   main .breadcrumb a:hover {
     color:#F7941D;
   }
 
 
-  .breadcrumb-item.active {
-    font-weight: 700;
+  main article ul {
+    padding-left: 15px;
   }
+
+  main article ul li{
+    margin-bottom:10px
+  }
+
+  main article ul li::before {
+    content: "\2022";
+    color:#f7941d;
+    font-weight:bold;
+    display:inline-block;
+    width:1em;
+    margin-left: -1em;
+  }
+
+  main article .masked {
+    width: 500px;
+    height:340px;
+    -webkit-mask-image: url('assets/images/grafismo.svg');
+    mask-image: url('assets/images/grafismo.svg');
+  }
+
+  main article .masked:nth-child(1){
+    position:absolute;
+    top: -60px;
+  }
+
+  main article .masked:nth-child(2){
+    position: absolute;
+    top: 140px;
+    left: 150px;
+  }
+
+  main article .accordion a:hover {
+    text-decoration:none;
+  }
+
 
 /* Navegação secundária */
   #secundaria {
